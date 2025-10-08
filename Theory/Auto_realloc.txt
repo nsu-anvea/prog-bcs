@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    FILE *file = fopen("example.txt", "r");
+
+    if (file == NULL) {
+        perror("Ошибка при открытии файла");
+        return 1;
+    }
+
+    char *buffer = NULL; // Используем указатель для хранения строки
+    size_t bufsize = 0;  // Начальный размер буфера
+
+    while (getline(&buffer, &bufsize, file) != -1) {
+        // Обработка строки (в данном случае, вывод в терминал)
+        printf("%s", buffer);
+    }
+
+    free(buffer); // Освобождаем выделенную память
+    fclose(file);
+
+    return 0;
+}

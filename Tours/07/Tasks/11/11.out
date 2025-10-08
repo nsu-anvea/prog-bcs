@@ -1,0 +1,12 @@
+Video "video/ffmpeg_test/tearsofsteel_avi_mpeg4_mp3.avi":
+  Total frames: 1007
+  Total decode time: 257.397 ms
+  Actual playback time: 41934.506 ms
+  Min/avg/max decode time: 0.233/0.256/0.584 ms
+
+Video "video/ffmpeg_test/sykes_roq_roq.roq":
+  Total frames: 354
+  Total decode time: 171.307 ms
+  Actual playback time: 11788.245 ms
+  Min/avg/max decode time: 0.419/0.484/0.719 ms
+
